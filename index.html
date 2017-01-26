@@ -31,17 +31,17 @@
   <p><a href="http://htmlacademy.ru" class="footer-link"><img src="img/htmlacademy-logo.png" alt="HTML Academy"
                                                               width="130">Сделано в HTML Academy</a>в 2017 году</p>
 </footer>
-	
+
 <script>
-	// размер фаербола 
+	// размер фаербола
 	var fireballSize = 22;
-	
-	// скорость мага 
+
+	// скорость мага
 	var wizardSpeed = 3;
-	
+
 	// ширина мага
 	var wizardWidth = 70;
-	
+
 	// скорость фаербола
 	var getFireballSpeed = function(left) {
 		if(left === true){
@@ -50,23 +50,25 @@
 			return 2;
 		}
 	};
-	
+
 	// пропорциональная высота мага
 	var getWizardHeight = function() {
 		return 1.337 * wizardWidth;
 	};
-	
+
 	// ширина игровой области
 	var getWizardX = function(width) {
 		return width / 2 - wizardWidth / 2;
 	};
-	
+
 	// высота игровой области
 	var getWizardY = function(height) {
-		return width / 3 * 2 + getWizardHeight / 2;
+		return height / 3 * 2 + getWizardHeight / 2;
 	};
 </script>
-	
+
+<script src="js/stat.js"></script>
+
 <script src="js/game.js" type="application/javascript"></script>
 
 </body>
