@@ -55,6 +55,6 @@ window.renderStatistics = function (ctx, names, times) {
 
     drawRect(baseX, baseY, 40, height, defaultColor);
     drawText(name, baseX, 100 + histoHeight + 20);
-    drawText(time.toFixed (0), baseX, baseY - 10);
+    drawText(time.toFixed(0), baseX, baseY - 10);
   }
 };
