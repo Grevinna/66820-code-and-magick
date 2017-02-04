@@ -37,20 +37,20 @@ var setupFireballColors = [
 ];
 
 // Получение случайного цвета из предоставленного набора.
-var getRandomColorFromSet = function(set) {
+var getRandomColorFromSet = function (set) {
   var randomElementIndex = Math.floor(Math.random() * set.length - 1);
   return set[randomElementIndex];
 };
 
 
 // открыть окно настройки персонажа
-setupOpen.addEventListener('click', function(event) {
+setupOpen.addEventListener('click', function (event) {
   event.preventDefault();
   setup.classList.toggle('invisible');
 });
 
 // закрыть окно настройки персонажа
-setupClose.addEventListener('click', function(event) {
+setupClose.addEventListener('click', function (event) {
   event.preventDefault();
   setup.classList.add('invisible');
 });
@@ -64,45 +64,16 @@ setupUserName.maxlength = 50;
 
 
 // изменение цвета мантии
-wizard.addEventListener('click', function() {
+wizard.addEventListener('click', function () {
   wizardCoat.style.fill = getRandomColorFromSet(wizardCoatColors);
 });
 
 // изменение цвета глаз
-wizard.addEventListener('click', function() {
+wizard.addEventListener('click', function () {
   wizardEyes.style.fill = getRandomColorFromSet(wizardEyesColors);
 });
 
 // изменение цвета фаерболов
-setupFireballWrap.addEventListener('click', function() {
+setupFireballWrap.addEventListener('click', function () {
   setupFireball.style.backgroundColor = getRandomColorFromSet(setupFireballColors);
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
